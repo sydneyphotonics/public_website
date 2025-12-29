@@ -32,6 +32,51 @@ body {
     overflow-x: hidden;
 }
 
+/* Accessibility - Skip to main content link */
+.skip-to-main {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 1rem 2rem;
+    background: var(--brand-blue);
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 0 0 4px 0;
+}
+
+.skip-to-main:focus {
+    left: 0;
+    top: 0;
+}
+
+/* Focus styles for keyboard navigation */
+*:focus {
+    outline: 2px solid var(--brand-orange);
+    outline-offset: 2px;
+}
+
+*:focus:not(:focus-visible) {
+    outline: none;
+}
+
+*:focus-visible {
+    outline: 2px solid var(--brand-orange);
+    outline-offset: 2px;
+}
+
+/* Reduced motion support for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
 /* Navigation */
 nav {
     position: fixed;

@@ -149,7 +149,10 @@
     </script>
 </head>
 <body>
-    <nav>
+    <!-- Skip to main content link for keyboard navigation -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+
+    <nav role="navigation" aria-label="Main navigation">
         <div class="nav-container">
             <a href="#hero" class="logo">
                 <img src="assets/logo.png" alt="Sydney Photonics" class="logo-img">
@@ -170,18 +173,19 @@
     </nav>
 
     <!-- HERO -->
-    <section class="hero" id="hero">
+    <main id="main-content">
+    <section class="hero" id="hero" aria-labelledby="hero-title">
         <div class="hero-bg"></div>
         <div class="hero-content">
             <div class="hero-text">
-                <h1>Precision Fibre-Based <span>Photonic Lanterns</span></h1>
+                <h1 id="hero-title">Precision Fibre-Based <span>Photonic Lanterns</span></h1>
                 <p>From the originators of photonic lantern technology. We design and manufacture high-performance mode conversion devices for telecommunications, sensing, and scientific instrumentation.</p>
                 <div class="hero-buttons">
                     <a href="#products" class="btn-primary">View Products →</a>
                     <a href="#technology" class="btn-secondary">How It Works</a>
                 </div>
             </div>
-            <div class="lantern-visual">
+            <div class="lantern-visual" role="img" aria-label="Photonic lantern diagram showing light conversion from multimode input to single-mode outputs">
                 <div class="lantern-diagram">
                     <div class="fibre-bundle mm-end">
                         <div class="fibre"></div>
@@ -239,15 +243,15 @@
     </section>
 
     <!-- PRODUCTS -->
-    <section class="products" id="products">
+    <section class="products" id="products" aria-labelledby="products-title">
         <div class="section-header">
             <p class="section-label">Our Products</p>
-            <h2 class="section-title">Photonic Lantern Range</h2>
+            <h2 class="section-title" id="products-title">Photonic Lantern Range</h2>
             <p class="section-subtitle">Four configurations optimised for different modal requirements, with flexible connector options to suit your application.</p>
         </div>
         <div class="products-grid">
             <div class="product-card">
-                <div class="product-fibre-count">
+                <div class="product-fibre-count" role="img" aria-label="3 fibre cores arranged in triangular pattern">
                     <div class="fibre-dots fibre-pack-3">
                         <span></span>
                         <span></span>
@@ -265,7 +269,7 @@
                 <a href="#contact" class="product-link">Request specifications →</a>
             </div>
             <div class="product-card">
-                <div class="product-fibre-count">
+                <div class="product-fibre-count" role="img" aria-label="6 fibre cores arranged in pentagon pattern with center core">
                     <div class="fibre-dots fibre-pack-6">
                         <span></span>
                         <span></span>
@@ -286,7 +290,7 @@
                 <a href="#contact" class="product-link">Request specifications →</a>
             </div>
             <div class="product-card">
-                <div class="product-fibre-count">
+                <div class="product-fibre-count" role="img" aria-label="7 fibre cores arranged in hexagon pattern with center core">
                     <div class="fibre-dots fibre-pack-7">
                         <span></span>
                         <span></span>
@@ -308,7 +312,7 @@
                 <a href="#contact" class="product-link">Request specifications →</a>
             </div>
             <div class="product-card">
-                <div class="product-fibre-count">
+                <div class="product-fibre-count" role="img" aria-label="19 fibre cores arranged in two concentric rings with center core">
                     <div class="fibre-dots fibre-pack-19">
                         <span></span>
                         <span></span>
@@ -345,10 +349,10 @@
     </section>
 
     <!-- TECHNOLOGY -->
-    <section class="technology" id="technology">
+    <section class="technology" id="technology" aria-labelledby="technology-title">
         <div class="section-header">
             <p class="section-label">Technology</p>
-            <h2 class="section-title">What is a Photonic Lantern?</h2>
+            <h2 class="section-title" id="technology-title">What is a Photonic Lantern?</h2>
             <p class="section-subtitle">Efficient, low-loss mode conversion between multimode and single-mode optical fibres.</p>
         </div>
         <div class="technology-content">
@@ -379,10 +383,10 @@
     </section>
 
     <!-- APPLICATIONS -->
-    <section class="applications" id="applications">
+    <section class="applications" id="applications" aria-labelledby="applications-title">
         <div class="section-header">
             <p class="section-label">Applications</p>
-            <h2 class="section-title">Where Photonic Lanterns Excel</h2>
+            <h2 class="section-title" id="applications-title">Where Photonic Lanterns Excel</h2>
             <p class="section-subtitle">Mode conversion technology enabling next-generation systems across multiple industries.</p>
         </div>
         <div class="applications-grid">
@@ -410,7 +414,7 @@
     </section>
 
     <!-- ABOUT -->
-    <section class="heritage" id="about">
+    <section class="heritage" id="about" aria-labelledby="about-title">
         <div class="heritage-content">
             <div class="heritage-visual">
                 <div class="heritage-image">
@@ -431,7 +435,7 @@
             </div>
             <div class="heritage-text">
                 <p class="section-label">About Us</p>
-                <h2>From the Originators of Photonic Lantern Technology</h2>
+                <h2 id="about-title">From the Originators of Photonic Lantern Technology</h2>
                 <p>Sydney Photonics brings two decades of research expertise to commercial photonic lantern manufacturing. Our devices are designed and fabricated by the team that pioneered this transformative technology.</p>
                 <p>Spun out of the Sydney Astrophotonic Instrumentation Laboratory (SAIL), we combine academic rigour with practical engineering to deliver devices that meet the most demanding specifications.</p>
                 <p><strong>Key Publications:</strong><br>
@@ -449,11 +453,11 @@
     </section>
 
     <!-- CONTACT -->
-    <section class="contact" id="contact">
+    <section class="contact" id="contact" aria-labelledby="contact-title">
         <div class="contact-container">
             <div class="section-header">
                 <p class="section-label">Contact</p>
-                <h2 class="section-title">Ready to Discuss Your Requirements?</h2>
+                <h2 class="section-title" id="contact-title">Ready to Discuss Your Requirements?</h2>
                 <p class="section-subtitle">Whether you need off-the-shelf devices or custom configurations, our team can help you find the right solution.</p>
             </div>
             <div class="contact-grid">
@@ -484,9 +488,10 @@
             </div>
         </div>
     </section>
+    </main>
 
     <!-- FOOTER -->
-    <footer>
+    <footer role="contentinfo">
         <div class="footer-content">
             <div class="footer-brand">
                 <a href="#hero" class="logo">
