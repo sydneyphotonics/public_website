@@ -739,7 +739,7 @@ nav.scrolled {
 .origin-badge {
     background: rgba(255,255,255,0.1);
     backdrop-filter: blur(10px);
-    padding: 2rem;
+    padding: 2rem 1.5rem;
     border-radius: 8px;
     color: white;
     text-align: center;
@@ -751,6 +751,7 @@ nav.scrolled {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .origin-badge:not(:last-child)::after {
@@ -1347,5 +1348,35 @@ footer {
     .diagram-labels span:first-child,
     .diagram-labels span:last-child {
         font-size: 0.75rem;
+    }
+
+    .heritage-content {
+        align-items: start;
+    }
+
+    .heritage-image {
+        aspect-ratio: auto;
+        min-height: auto;
+        padding: 2rem 1rem;
+        gap: 2rem;
+        overflow: visible;
+    }
+
+    .origin-badge {
+        max-width: 100%;
+        min-height: auto;
+        padding: 1.5rem 1rem;
+    }
+
+    .origin-badge .year {
+        font-size: 2.5rem;
+    }
+
+    .origin-badge p {
+        font-size: 0.85rem;
+    }
+
+    .origin-badge:not(:last-child)::after {
+        line-height: 2rem;
     }
 }
